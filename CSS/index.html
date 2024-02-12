@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles.css">
 	<title>Effects</title>
 </head>
+
 <body>
 	<div class="text-container">
 		<div class="typing">
@@ -27,30 +29,30 @@
 		const textElement = document.querySelector('.text-accent');
 		let stringIndex = 0;
 		let charIndex = 0;
-	  
+
 		function type() {
-		  if (charIndex < strings[stringIndex].length) {
-			textElement.textContent += strings[stringIndex].charAt(charIndex);
-			charIndex++;
-			setTimeout(type, 50);
-		  } else {
-			setTimeout(erase, 2000);
-		  }
+			if (charIndex < strings[stringIndex].length) {
+				textElement.textContent += strings[stringIndex].charAt(charIndex);
+				charIndex++;
+				setTimeout(type, 50);
+			} else {
+				setTimeout(erase, 2000);
+			}
 		}
-	  
+
 		function erase() {
-		  if (charIndex > 0) {
-			textElement.textContent = strings[stringIndex].substring(0, charIndex - 1);
-			charIndex--;
-			setTimeout(erase, 50);
-		  } else {
-			stringIndex = (stringIndex + 1) % strings.length;
-			setTimeout(type, 1000);
-		  }
+			if (charIndex > 0) {
+				textElement.textContent = strings[stringIndex].substring(0, charIndex - 1);
+				charIndex--;
+				setTimeout(erase, 50);
+			} else {
+				stringIndex = (stringIndex + 1) % strings.length;
+				setTimeout(type, 1000);
+			}
 		}
-	  
+
 		type(); // Start the typing animation
-	  </script>
+	</script>
 	<div class="container">
 		<div class="image">
 			<div class="road">
@@ -66,7 +68,8 @@
 			<div class="forest">
 				FOREST
 			</div>
-		</div>	
+		</div>
 	</div>
 </body>
+
 </html>
