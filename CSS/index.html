@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/logo.jpg " type="image/png" sizes="60x60">
 	<link rel="stylesheet" href="styles.css">
 	<title>Effects</title>
 </head>
@@ -16,43 +17,8 @@
 	</div>
 	<div class="accent">
 		<span class="text-accent"></span>
+		<script src="script.js"></script>
 	</div>
-	<script>
-		// JavaScript to simulate the typing animation
-		const strings = [
-			"SaKarKal",
-			"Sma9ma9",
-			"And i am a ",
-			"Frontend Developer",
-			"Software Engineer",
-		];
-		const textElement = document.querySelector('.text-accent');
-		let stringIndex = 0;
-		let charIndex = 0;
-
-		function type() {
-			if (charIndex < strings[stringIndex].length) {
-				textElement.textContent += strings[stringIndex].charAt(charIndex);
-				charIndex++;
-				setTimeout(type, 50);
-			} else {
-				setTimeout(erase, 2000);
-			}
-		}
-
-		function erase() {
-			if (charIndex > 0) {
-				textElement.textContent = strings[stringIndex].substring(0, charIndex - 1);
-				charIndex--;
-				setTimeout(erase, 50);
-			} else {
-				stringIndex = (stringIndex + 1) % strings.length;
-				setTimeout(type, 1000);
-			}
-		}
-
-		type(); // Start the typing animation
-	</script>
 	<div class="container">
 		<div class="image">
 			<div class="road">
