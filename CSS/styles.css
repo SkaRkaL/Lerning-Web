@@ -82,14 +82,14 @@ body {
 }
 
 .text-accent {
+	height: 50px;
     display: inline;
 	font-size: 200%;
 	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	font-weight: 800;
     overflow: hidden;
-    border-right: .15em solid rgba(75, 152, 185, 0.563);
     white-space: nowrap;
-    animation: typing 2s steps(40, end), blink-caret .75s infinite alternate;
+    animation: typing 2s steps(90, end), blink-caret .75s infinite alternate;
 }
 
 @keyframes typing {
@@ -104,8 +104,5 @@ body {
 @keyframes blink-caret {
     from, to {
       border-color: transparent;
-    }
-    50% {
-      border-color: rgba(75, 152, 185, 0.563); /* Adjust border color to match your design */
     }
 }
