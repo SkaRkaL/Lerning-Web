@@ -6,6 +6,15 @@
 	box-sizing: border-box;
 }
 
+button {
+	position: relative;
+	display: inline-block;
+	color: black;
+	text-size-adjust: 200%;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
 
 a {
 	position: relative;
@@ -23,21 +32,35 @@ a {
 
 a:hover {
 	background: #03e9f4;
-	color: #050801;
-	box-shadow: 0 0 5px #03e9f4,
-		0 0 25px #03e9f4,
-		0 0 50px #03e9f4,
-		0 0 200px #03e9f4;
+	color: black;
+	box-shadow: 0 0 2px #03e9f4,
+		0 0 2px #03e9f4,
+		0 0 2px #03e9f4,
+		0 0 2px #03e9f4;
 	-webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
 
-a:nth-child(1) {
+/* a:nth-child(1) {
 	filter: hue-rotate(270deg);
+} */
+
+a:nth-child(1) {
+    filter: hue-rotate(290deg);
 }
 
+
 a:nth-child(2) {
-	filter: hue-rotate(110deg);
+    filter: hue-rotate(190deg);
 }
+
+a:nth-child(3) {
+    filter: hue-rotate(90deg);
+}
+
+a:nth-child(4) {
+    filter: hue-rotate(1deg);
+}
+
 
 a span {
 	position: absolute;
