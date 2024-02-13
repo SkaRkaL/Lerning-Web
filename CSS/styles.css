@@ -37,6 +37,7 @@ body {
 .forest {
 	background-image: url("img/Forest.jpg");
 	background-size: cover;
+	background-position: -100%;
 	background-clip: text;
 	-webkit-background-clip: text;
 	color: transparent;
@@ -46,6 +47,7 @@ body {
 .beach {
 	background-image: url("img/beach.jpg");
 	background-size: cover;
+	background-position: -100%;
 	background-clip: text;
 	-webkit-background-clip: text;
 	color: transparent;
@@ -53,8 +55,9 @@ body {
 }
 
 .road {
-	background-image: url("img/roadd.jpg");
+	background-image: url("img/roaddd.jpg");
 	background-size: cover;
+	background-position: -100%;
 	background-clip: text;
 	-webkit-background-clip: text;
 	color: transparent;
@@ -104,4 +107,18 @@ body {
     from, to {
       border-color: transparent;
     }
+}
+
+.butt {
+	color: cyan;
+	border: 2px outset ;
+	background-color: black;
+	height:50px;
+	width:50px;
+	cursor:pointer;
+}
+ 
+.butt:hover {
+	background-color: cyan;
+	color: black;
 }
